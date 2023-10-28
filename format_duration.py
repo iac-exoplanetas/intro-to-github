@@ -16,7 +16,7 @@ def format_duration(seconds):
     years = format(seconds // 31_536_000, "year")
     days = format(seconds % 31_536_000 // 86_400, "day")
     hours = format(seconds % 86_400 // 3600, "hour")
-    minutes = format(seconds % 3600 // 60, "minite")
+    minutes = format(seconds % 3600 // 60, "minute")
     seconds = format(seconds % 60, "second")
 
     not_zero = tuple(filter(lambda x: x != '', (years, days, hours, minutes, seconds)))
