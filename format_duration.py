@@ -17,13 +17,9 @@ def format_duration(t):
             q = t // value
             
             if q > 1:
-                output_list.append(
-                    f"{q} {key}s"
-                )
+                output_list.append(f"{q} {key}s")
             else:
-                output_list.append(
-                    f"{q} {key}"
-                )
+                output_list.append(f"{q} {key}")
             # the parent if-condition guarantees that q > 0,
             # so this case covers q == 1
 
