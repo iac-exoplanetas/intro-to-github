@@ -24,6 +24,8 @@ def format_duration(t):
                 output_list.append(
                     f"{q} {key}"
                 )
+            # the parent if-condition guarantees that q > 0,
+            # so this case covers q == 1
 
             t %= value
     
