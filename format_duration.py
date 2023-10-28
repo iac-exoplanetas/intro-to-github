@@ -18,11 +18,11 @@ def format_duration(t):
             
             if q > 1:
                 output_list.append(
-                    f"{q} {v}s"
+                    f"{q} {k}s"
                 )
             else:
                 output_list.append(
-                    f"{q} {v}"
+                    f"{q} {k}"
                 )
 
             t %= v
