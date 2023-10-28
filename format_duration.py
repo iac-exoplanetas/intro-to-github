@@ -1,4 +1,4 @@
-times = {
+time_units = {
     "year": 365*24*60*60,
     "day": 24*60*60,
     "hour": 60*60,
@@ -12,20 +12,20 @@ def format_duration(t):
     
     output_list = []
 
-    for k, v in times.items():
-        if t > v:
-            q = t // v
+    for key, value in time_units.items():
+        if t > value:
+            q = t // value
             
             if q > 1:
                 output_list.append(
-                    f"{q} {k}s"
+                    f"{q} {key}s"
                 )
             else:
                 output_list.append(
-                    f"{q} {k}"
+                    f"{q} {key}"
                 )
 
-            t %= v
+            t %= value
     
     if len(output_list) > 1:
         output_string = ", ".join(output_list[:-1])
