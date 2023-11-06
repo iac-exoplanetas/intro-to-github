@@ -3,7 +3,7 @@ time_units = {
     "day": 24*60*60,
     "hour": 60*60,
     "minute": 60,
-    "second": 1
+    "second": 1,
 }
 
 def format_duration(t):
